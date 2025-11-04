@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarbonEcoMarket - World's First Hybrid Carbon Exchange | $1.5-2M Seed</title>
-    
-    <!-- SEO Meta Tags -->
+    <title>CarbonEcoMarket - Investment Opportunity | $1.5-2M Seed Round</title>
     <meta name="description" content="World's first hybrid carbon exchange. CBAM 2026 compliance, blockchain verification, multi-sided marketplace. $1.5-2M Seed, 149x ROI potential.">
     <meta name="keywords" content="carbon credits, CBAM, blockchain, carbon exchange, investment, seed round">
     
@@ -14,833 +12,575 @@
     <meta property="og:description" content="World's first hybrid carbon exchange seeking $1.5-2M Seed investment">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://invest.carbonecomarket.com">
-    <meta property="og:image" content="https://invest.carbonecomarket.com/assets/og-image.jpg">
+    <meta property="og:image" content="https://invest.carbonecomarket.com/og-image.jpg">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="CarbonEcoMarket - Investment">
     <meta name="twitter:description" content="$1.5-2M Seed Round | 149x ROI Potential">
     
-    <!-- External Libraries -->
+    <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <style>
+        :root {
+            /* Primary Colors */
+            --primary-teal: #0F6B63;
+            --accent-lime: #A6E22E;
+            --success-emerald: #10b981;
+            
+            /* Secondary Colors */
+            --tech-blue: #2980b9;
+            --energy-amber: #f59e0b;
+            
+            /* Neutrals */
+            --slate-dark: #2F3E46;
+            --slate-medium: #6b7280;
+            --cloud-light: #F7F9FA;
+            --white: #ffffff;
+            
+            /* Chart Colors */
+            --chart-conservative: #64748b;
+            --chart-base: #0F6B63;
+            --chart-aggressive: #A6E22E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--slate-dark);
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            z-index: 1000;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-teal);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 0 auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--slate-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-teal);
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .language-toggle {
+            display: flex;
+            background: var(--cloud-light);
+            border-radius: 25px;
+            padding: 4px;
+        }
+
+        .lang-btn {
+            padding: 6px 12px;
+            border: none;
+            background: transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .lang-btn.active {
+            background: var(--primary-teal);
+            color: white;
+        }
+
+        .cta-button {
+            background: var(--accent-lime);
+            color: var(--slate-dark);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-teal), var(--tech-blue));
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 5% 80px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 4rem;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2.5rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .metric-card {
+            background: var(--white);
+            color: var(--slate-dark);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-teal);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            background: var(--accent-lime);
+            color: var(--slate-dark);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 5%;
+        }
+
+        .section-dark {
+            background: var(--cloud-light);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Financial Tables */
+        .scenario-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            border: 2px solid var(--primary-teal);
+            background: transparent;
+            color: var(--primary-teal);
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active {
+            background: var(--primary-teal);
+            color: white;
+        }
+
+        .financial-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 3rem;
+        }
+
+        .financial-table th,
+        .financial-table td {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .financial-table th {
+            background: var(--primary-teal);
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .team-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            background: var(--cloud-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-teal);
+        }
+
+        /* Calculator */
+        .calculator {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .calculator-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .slider-container {
+            margin-bottom: 1rem;
+        }
+
+        .slider-value {
+            font-weight: 600;
+            color: var(--primary-teal);
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .calculator-outputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .output-card {
+            background: var(--primary-teal);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .output-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--slate-dark);
+            color: white;
+            padding: 60px 5% 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+            
+            .calculator {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-content">
-            <div class="loading-logo">
-                <div class="logo-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <span>CarbonEcoMarket</span>
-            </div>
-            <div class="loading-spinner"></div>
-            <p>Loading Investment Platform...</p>
-        </div>
-    </div>
-
     <!-- Header -->
-    <header id="header">
-        <nav class="container">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-leaf"></i>
-                </div>
-                <span>CarbonEcoMarket</span>
-            </div>
-            
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#problem" data-i18n="nav.problem">Problem</a></li>
-                <li><a href="#solution" data-i18n="nav.solution">Solution</a></li>
-                <li><a href="#market" data-i18n="nav.market">Market</a></li>
-                <li><a href="#traction" data-i18n="nav.traction">Traction</a></li>
-                <li><a href="#financials" data-i18n="nav.financials">Financials</a></li>
-                <li><a href="#team" data-i18n="nav.team">Team</a></li>
-                <li><a href="#calculator" data-i18n="nav.calculator">Calculator</a></li>
-            </ul>
-
-            <div class="nav-right">
-                <div class="language-switcher">
-                    <button class="language-btn" id="languageBtn">
-                        <span class="language-flag">🇹🇷</span>
-                        <span class="language-text">TR</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="language-dropdown" id="languageDropdown">
-                        <button class="language-option" data-lang="tr">
-                            <span class="language-flag">🇹🇷</span>
-                            <span class="language-text">Türkçe</span>
-                        </button>
-                        <button class="language-option" data-lang="en">
-                            <span class="language-flag">🇬🇧</span>
-                            <span class="language-text">English</span>
-                        </button>
-                    </div>
-                </div>
-                <a href="#" class="btn-dataroom" data-i18n="nav.dataroom">
-                    <i class="fas fa-lock"></i>
-                    <span>Data Room</span>
-                </a>
-                <div class="mobile-menu-btn" id="mobileMenuBtn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+    <header>
+        <div class="logo">CarbonEcoMarket</div>
+        <nav>
+            <a href="#problem">Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#market">Market</a>
+            <a href="#traction">Traction</a>
+            <a href="#financials">Financials</a>
+            <a href="#team">Team</a>
+            <a href="#calculator">Calculator</a>
         </nav>
+        <div class="header-right">
+            <div class="language-toggle">
+                <button class="lang-btn active" data-lang="tr">🇹🇷 TR</button>
+                <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+            </div>
+            <button class="cta-button" data-tr="Data Room Erişim" data-en="Data Room Access">Data Room Erişim</button>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <i class="fas fa-bolt"></i>
-                        <span data-i18n="hero.badge">Dünyanın İlk Hibrit Karbon Borsası</span>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-tr="Dünyanın İlk Hibrit Karbon Borsası" data-en="World's First Hybrid Carbon Exchange">
+                    Dünyanın İlk Hibrit Karbon Borsası
+                </h1>
+                <p data-tr="CBAM 2026 uyumu, blockchain doğrulama, çok taraflı pazar" 
+                   data-en="CBAM 2026 compliance, blockchain verification, multi-sided marketplace">
+                    CBAM 2026 uyumu, blockchain doğrulama, çok taraflı pazar
+                </p>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-value">$1.5-2M</div>
+                        <div data-tr="Seed Round" data-en="Seed Round">Seed Round</div>
                     </div>
-                    <h1 data-i18n="hero.title">Karbon Ekonomisinin <span class="gradient-text">Geleceği</span></h1>
-                    <p class="hero-subtitle" data-i18n="hero.subtitle">CBAM 2026 uyumu, blockchain doğrulama, çok taraflı pazar ile $70B+ küresel pazarda liderlik</p>
-                    
-                    <div class="hero-cta">
-                        <a href="#" class="btn btn-primary" data-i18n="hero.dataroom">
-                            <i class="fas fa-lock"></i>
-                            <span>Data Room'a Erişim</span>
-                        </a>
-                        <a href="#financials" class="btn btn-secondary" data-i18n="hero.financials">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Finansal Projeksiyonlar</span>
-                        </a>
+                    <div class="metric-card">
+                        <div class="metric-value">12 LOI</div>
+                        <div data-tr="50K ton/year" data-en="50K ton/year">50K ton/year</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">$9.1M</div>
+                        <div data-tr="Post-Money" data-en="Post-Money">Post-Money</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value">149x</div>
+                        <div data-tr="Target ROI (Aggressive)" data-en="Target ROI (Aggressive)">Target ROI (Aggressive)</div>
                     </div>
                 </div>
                 
-                <div class="hero-visual">
-                    <div class="hero-metrics">
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <i class="fas fa-seedling"></i>
-                            </div>
-                            <div class="metric-value">$1.5-2M</div>
-                            <div class="metric-label" data-i18n="hero.seed">Seed Round</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <i class="fas fa-file-contract"></i>
-                            </div>
-                            <div class="metric-value">12 LOI</div>
-                            <div class="metric-label" data-i18n="hero.loi">50K ton/year</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <div class="metric-value">$10M</div>
-                            <div class="metric-label" data-i18n="hero.postmoney">Post-Money</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="metric-value">149x</div>
-                            <div class="metric-label" data-i18n="hero.roi">Target ROI</div>
-                        </div>
-                    </div>
+                <div class="hero-buttons">
+                    <button class="cta-button btn-primary" data-tr="Sunumu İndir" data-en="Download Deck">
+                        Sunumu İndir
+                    </button>
+                    <button class="cta-button btn-secondary" data-tr="Data Room" data-en="Data Room">
+                        Data Room
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Globe animation placeholder -->
+                <div style="width: 100%; height: 400px; background: rgba(255,255,255,0.1); border-radius: 20px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-globe-americas" style="font-size: 4rem;"></i>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Unicorn Potential Section -->
-    <section class="unicorn" id="unicorn">
+    <section class="section-dark" id="unicorn">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-crown"></i>
-                    <span data-i18n="unicorn.badge">Unicorn Potansiyeli</span>
+            <h2 data-tr="🦄 Unicorn Potansiyeli: $1B+ Değerleme Yolu" 
+                data-en="🦄 Unicorn Potential: Path to $1B+ Valuation">
+                🦄 Unicorn Potansiyeli: $1B+ Değerleme Yolu
+            </h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3 data-tr="Global Karbon Piyasası" data-en="Global Carbon Market">Global Karbon Piyasası</h3>
+                    <p data-tr="$70B+ (2030'da $300B+)" data-en="$70B+ (projected $300B+ by 2030)">$70B+ (2030'da $300B+)</p>
                 </div>
-                <h2 data-i18n="unicorn.title">$1B+ Değerleme Yolu</h2>
-                <p class="section-subtitle" data-i18n="unicorn.subtitle">Küresel karbon piyasasında benzersiz pozisyon ve büyüme potansiyeli</p>
-            </div>
-            
-            <div class="unicorn-grid">
-                <div class="unicorn-card">
-                    <div class="unicorn-icon">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3 data-i18n="unicorn.card1.title">$70B+ Küresel Pazar</h3>
-                    <p data-i18n="unicorn.card1.desc">2030'da $300B+ büyüme projeksiyonu</p>
+                <div class="card">
+                    <h3 data-tr="Türkiye'nin CBAM Zorunluluğu" data-en="Turkey's CBAM Mandate">Türkiye'nin CBAM Zorunluluğu</h3>
+                    <p data-tr="15,000+ şirket" data-en="15,000+ companies">15,000+ şirket</p>
                 </div>
-                <div class="unicorn-card">
-                    <div class="unicorn-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3 data-i18n="unicorn.card2.title">15,000+ Şirket</h3>
-                    <p data-i18n="unicorn.card2.desc">CBAM zorunluluğu ile acil çözüm ihtiyacı</p>
-                </div>
-                <div class="unicorn-card">
-                    <div class="unicorn-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3 data-i18n="unicorn.card3.title">Teknoloji Liderliği</h3>
-                    <p data-i18n="unicorn.card3.desc">Blockchain + IoT + AI kombinasyonu</p>
-                </div>
-                <div class="unicorn-card">
-                    <div class="unicorn-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3 data-i18n="unicorn.card4.title">4 Segment Pazar</h3>
-                    <p data-i18n="unicorn.card4.desc">Bireysel + Çiftçi + Kurumsal + Trader</p>
-                </div>
-            </div>
-
-            <div class="decacorn-timeline">
-                <h3 data-i18n="unicorn.decacorn">📈 $10B+ Decacorn Yol Haritası</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-year">2025</div>
-                            <h4 data-i18n="unicorn.timeline1.title">Seed Aşaması</h4>
-                            <p data-i18n="unicorn.timeline1.desc">MVP geliştirme ve pilot müşteriler</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-year">2027</div>
-                            <h4 data-i18n="unicorn.timeline2.title">Series A & Büyüme</h4>
-                            <p data-i18n="unicorn.timeline2.desc">Pazar liderliği ve bölgesel genişleme</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-year">2031</div>
-                            <h4 data-i18n="unicorn.timeline3.title">Unicorn Aşaması</h4>
-                            <p data-i18n="unicorn.timeline3.desc">$1B+ değerleme ve küresel operasyonlar</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <div class="timeline-dot"></div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-year">2034-35</div>
-                            <h4 data-i18n="unicorn.timeline4.title">Decacorn Potansiyeli</h4>
-                            <p data-i18n="unicorn.timeline4.desc">$10B+ değerleme ve endüstri liderliği</p>
-                        </div>
-                    </div>
+                <div class="card">
+                    <h3 data-tr="Blockchain + IoT + AI Kombinasyonu" data-en="Blockchain + IoT + AI Combo">Blockchain + IoT + AI Kombinasyonu</h3>
+                    <p data-tr="İlk ve tek" data-en="First and only">İlk ve tek</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Problem Section -->
-    <section id="problem" class="problem">
+    <section id="problem">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <span data-i18n="problem.badge">Acil Çözüm Gerekiyor</span>
+            <h2 data-tr="❌ CBAM 2026 Krizi - Acil Çözüm Gereken Problem" 
+                data-en="❌ CBAM 2026 Crisis - Urgent Problem Needs Solution">
+                ❌ CBAM 2026 Krizi - Acil Çözüm Gereken Problem
+            </h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <i class="fas fa-industry" style="font-size: 2rem; color: var(--primary-teal); margin-bottom: 1rem;"></i>
+                    <h3 data-tr="15,000+ Türk İhracatçı Risk Altında" data-en="15,000+ Turkish Exporters at Risk">
+                        15,000+ Türk İhracatçı Risk Altında
+                    </h3>
+                    <p data-tr="AB'ye ihracat yapan tüm firmalar" data-en="All companies exporting to EU">
+                        AB'ye ihracat yapan tüm firmalar
+                    </p>
                 </div>
-                <h2 data-i18n="problem.title">CBAM 2026 Krizi</h2>
-                <p class="section-subtitle" data-i18n="problem.subtitle">Türk ihracatçılar için €50-100/ton karbon cezası riski</p>
-            </div>
-            
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3 data-i18n="problem.card1.title">15,000+ Türk İhracatçı</h3>
-                    <p data-i18n="problem.card1.desc">AB'ye ihracat yapan tüm firmalar risk altında</p>
-                    <div class="problem-stat">%100</div>
-                </div>
-                
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <h3 data-i18n="problem.card2.title">$40B İhracat Riski</h3>
-                    <p data-i18n="problem.card2.desc">Türkiye'nin yıllık AB ihracatı tehlikede</p>
-                    <div class="problem-stat">40B $</div>
-                </div>
-                
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-euro-sign"></i>
-                    </div>
-                    <h3 data-i18n="problem.card3.title">€50-100/ton Cezalar</h3>
-                    <p data-i18n="problem.card3.desc">Uyumsuzluk başına ağır mali yaptırımlar</p>
-                    <div class="problem-stat">€100/ton</div>
-                </div>
-                
-                <div class="problem-card">
-                    <div class="problem-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h3 data-i18n="problem.card4.title">Manuel Çözüm İmkansız</h3>
-                    <p data-i18n="problem.card4.desc">Binlerce tedarikçi, karmaşık karbon hesaplama</p>
-                    <div class="problem-stat">0</div>
-                </div>
-            </div>
-            
-            <div class="quote-box">
-                <div class="quote-icon">
-                    <i class="fas fa-quote-left"></i>
-                </div>
-                <p class="quote-text" data-i18n="problem.quote.text">"Üyelerimiz panikleme yaşıyor. CBAM hesaplama için acil çözüm lazım."</p>
-                <p class="quote-author" data-i18n="problem.quote.author">- Türkiye İhracatçılar Meclisi (TİM)</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solution Section -->
-    <section id="solution" class="solution">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-lightbulb"></i>
-                    <span data-i18n="solution.badge">Teknoloji Çözümü</span>
-                </div>
-                <h2 data-i18n="solution.title">6 Temel Teknoloji Modülü</h2>
-                <p class="section-subtitle" data-i18n="solution.subtitle">Kapsamlı karbon yönetimi için entegre platform</p>
-            </div>
-            
-            <div class="solution-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 data-i18n="solution.card1.title">CBAM Uyum Motoru</h3>
-                    <ul>
-                        <li data-i18n="solution.card1.item1">AI destekli karbon hesaplama</li>
-                        <li data-i18n="solution.card1.item2">ERP entegrasyonu</li>
-                        <li data-i18n="solution.card1.item3">Otomatik raporlama</li>
-                        <li data-i18n="solution.card1.item4">Tedarikçi yönetimi</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-link"></i>
-                    </div>
-                    <h3 data-i18n="solution.card2.title">Blockchain Registry</h3>
-                    <ul>
-                        <li data-i18n="solution.card2.item1">Polygon network (ERC-1155)</li>
-                        <li data-i18n="solution.card2.item2">Değiştirilemez karbon kredileri</li>
-                        <li data-i18n="solution.card2.item3">Şeffaf takip</li>
-                        <li data-i18n="solution.card2.item4">Akıllı kontratlar</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-satellite-dish"></i>
-                    </div>
-                    <h3 data-i18n="solution.card3.title">IoT MRV Sistemi</h3>
-                    <ul>
-                        <li data-i18n="solution.card3.item1">Gerçek zamanlı ölçüm</li>
-                        <li data-i18n="solution.card3.item2">Sensör entegrasyonu</li>
-                        <li data-i18n="solution.card3.item3">Otomatik doğrulama</li>
-                        <li data-i18n="solution.card3.item4">Veri güvenliği</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h3 data-i18n="solution.card4.title">Çok Taraflı Pazar</h3>
-                    <ul>
-                        <li data-i18n="solution.card4.item1">Bireysel kullanıcılar</li>
-                        <li data-i18n="solution.card4.item2">Çiftçiler</li>
-                        <li data-i18n="solution.card4.item3">Kurumsal müşteriler</li>
-                        <li data-i18n="solution.card4.item4">Profesyonel traderlar</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-plug"></i>
-                    </div>
-                    <h3 data-i18n="solution.card5.title">API & Entegrasyon</h3>
-                    <ul>
-                        <li data-i18n="solution.card5.item1">RESTful API</li>
-                        <li data-i18n="solution.card5.item2">Webhooks</li>
-                        <li data-i18n="solution.card5.item3">SDK (Python, Node.js, Java)</li>
-                        <li data-i18n="solution.card5.item4">White-label çözüm</li>
-                    </ul>
-                </div>
-                
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 data-i18n="solution.card6.title">Enterprise Security</h3>
-                    <ul>
-                        <li data-i18n="solution.card6.item1">SOC2 Type II</li>
-                        <li data-i18n="solution.card6.item2">ISO 27001</li>
-                        <li data-i18n="solution.card6.item3">GDPR uyumlu</li>
-                        <li data-i18n="solution.card6.item4">Penetrasyon testi</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Competitive Advantage Section -->
-    <section id="competitive" class="competitive">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-trophy"></i>
-                    <span data-i18n="competitive.badge">Rekabet Avantajı</span>
-                </div>
-                <h2 data-i18n="competitive.title">Piyasa Liderliği</h2>
-                <p class="section-subtitle" data-i18n="competitive.subtitle">Dünyada tek: 4 kullanıcı segmentini birleştiren platform</p>
-            </div>
-            
-            <div class="comparison-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th data-i18n="competitive.table.header1">Özellik</th>
-                            <th data-i18n="competitive.table.header2">CarbonEcoMarket</th>
-                            <th>Xpansiv CBL</th>
-                            <th>Verra</th>
-                            <th>Puro.earth</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-i18n="competitive.table.row1.feature">CBAM 2026 Uyumu</td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> Tam uyum</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Yok</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Yok</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Yok</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="competitive.table.row2.feature">Blockchain Doğrulama</td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> Polygon</span></td>
-                            <td><span class="feature-badge warning"><i class="fas fa-clock"></i> Planlanıyor</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Yok</span></td>
-                            <td><span class="feature-badge warning"><i class="fas fa-exclamation"></i> Sınırlı</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="competitive.table.row3.feature">IoT MRV Sistemi</td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> Gerçek zaman</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Yok</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Yok</span></td>
-                            <td><span class="feature-badge warning"><i class="fas fa-exclamation"></i> Manuel</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="competitive.table.row4.feature">Çok Taraflı Pazar</td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> 4 Segment</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Sadece B2B</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Proje</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> B2B</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="competitive.table.row5.feature">Bireysel Kullanıcılar</td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> Evet</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Hayır</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Hayır</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Hayır</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="competitive.table.row6.feature">Çiftçi Karbon Satışı</td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> Türkiye+MENA</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Yok</span></td>
-                            <td><span class="feature-badge warning"><i class="fas fa-exclamation"></i> Proje</span></td>
-                            <td><span class="feature-badge warning"><i class="fas fa-exclamation"></i> ABD</span></td>
-                        </tr>
-                        <tr>
-                            <td data-i18n="competitive.table.row7.feature">Trader Platformu</td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> Evet</span></td>
-                            <td><span class="feature-badge success"><i class="fas fa-check"></i> Evet</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Hayır</span></td>
-                            <td><span class="feature-badge error"><i class="fas fa-times"></i> Hayır</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <div class="research-box">
-                <div class="research-icon">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="research-content">
-                    <h3 data-i18n="competitive.research.title">Pazar Araştırması Sonuçları</h3>
-                    <ul>
-                        <li data-i18n="competitive.research.item1"><strong>Dünyada Tek:</strong> Bireysel karbon hesaplama + sıfırlama</li>
-                        <li data-i18n="competitive.research.item2"><strong>Dünyada Tek:</strong> Çiftçiler için karbon satış platformu</li>
-                        <li data-i18n="competitive.research.item3"><strong>Dünyada Tek:</strong> Trader + Bireysel + Kurumsal tek platform</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Market Opportunity Section -->
-    <section id="market" class="market">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-chart-pie"></i>
-                    <span data-i18n="market.badge">Pazar Fırsatı</span>
-                </div>
-                <h2 data-i18n="market.title">$70B Global Karbon Pazarı</h2>
-                <p class="section-subtitle" data-i18n="market.subtitle">2030'da $300B+ büyüme projeksiyonu ile hızla büyüyen pazar</p>
-            </div>
-            
-            <div class="market-visual">
-                <div class="market-stack">
-                    <div class="market-layer tam">
-                        <div class="layer-content">
-                            <h3 data-i18n="market.tam.title">$70B+</h3>
-                            <p data-i18n="market.tam.subtitle">Global Karbon Piyasası</p>
-                            <div class="layer-growth">→ $300B+ (2030)</div>
-                        </div>
-                    </div>
-                    <div class="market-layer sam">
-                        <div class="layer-content">
-                            <h3 data-i18n="market.sam.title">$5B</h3>
-                            <p data-i18n="market.sam.subtitle">MENA + Türkiye Bölgesi</p>
-                            <div class="layer-breakdown">
-                                <div class="breakdown-item">
-                                    <span class="breakdown-label">Türkiye</span>
-                                    <span class="breakdown-value">$2B</span>
-                                </div>
-                                <div class="breakdown-item">
-                                    <span class="breakdown-label">UAE</span>
-                                    <span class="breakdown-value">$1.5B</span>
-                                </div>
-                                <div class="breakdown-item">
-                                    <span class="breakdown-label">Suudi Arabistan</span>
-                                    <span class="breakdown-value">$1B</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="market-layer som">
-                        <div class="layer-content">
-                            <h3 data-i18n="market.som.title">$500M</h3>
-                            <p data-i18n="market.som.subtitle">3. Yıl Hedef</p>
-                            <div class="layer-timeline">
-                                <div class="timeline-item">
-                                    <span class="timeline-year">2026</span>
-                                    <span class="timeline-value">$50M</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="timeline-year">2027</span>
-                                    <span class="timeline-value">$150M</span>
-                                </div>
-                                <div class="timeline-item">
-                                    <span class="timeline-year">2028</span>
-                                    <span class="timeline-value">$500M</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="value-proposition">
-                <div class="value-icon">
-                    <i class="fas fa-gem"></i>
-                </div>
-                <div class="value-content">
-                    <h3 data-i18n="market.value.title">Benzersiz Değer Önerisi</h3>
-                    <p data-i18n="market.value.text">Hiçbir platform bireysel kullanıcı + çiftçi + kurumsal + trader'ı tek çatı altında birleştirmiyor. Biz bunu yapan ilk ve tek platformuz!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Traction Section -->
-    <section id="traction" class="traction">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-chart-line"></i>
-                    <span data-i18n="traction.badge">Çekiş & Doğrulama</span>
-                </div>
-                <h2 data-i18n="traction.title">İlerleme & Başarılar</h2>
-                <p class="section-subtitle" data-i18n="traction.subtitle">Pazar validasyonu ve stratejik ilerleme</p>
-            </div>
-            
-            <div class="traction-grid">
-                <div class="traction-card">
-                    <div class="traction-icon">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-                    <div class="traction-content">
-                        <h3 data-i18n="traction.card1.title">12 LOI İmzalandı</h3>
-                        <ul>
-                            <li data-i18n="traction.card1.item1">50K ton/yıl pipeline</li>
-                            <li data-i18n="traction.card1.item2">$10M+ potansiyel ARR</li>
-                            <li data-i18n="traction.card1.item3">Pilot müşteriler hazır</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="traction-card">
-                    <div class="traction-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="traction-content">
-                        <h3 data-i18n="traction.card2.title">3 C-Level Danışman</h3>
-                        <ul>
-                            <li data-i18n="traction.card2.item1">Selim Güven - ACWA Power</li>
-                            <li data-i18n="traction.card2.item2">Hüseyin Yeğin - Borusan EnBW</li>
-                            <li data-i18n="traction.card2.item3">Ilgın Sözen - ÇEKÜL Vakfı</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="traction-card">
-                    <div class="traction-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <div class="traction-content">
-                        <h3 data-i18n="traction.card3.title">MVP Q1 2026</h3>
-                        <ul>
-                            <li data-i18n="traction.card3.item1">Blockchain testnet aktif</li>
-                            <li data-i18n="traction.card3.item2">CBAM modülü test aşamasında</li>
-                            <li data-i18n="traction.card3.item3">25+ firma pilot pipeline</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="traction-card">
-                    <div class="traction-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div class="traction-content">
-                        <h3 data-i18n="traction.card4.title">Stratejik Ortaklıklar</h3>
-                        <ul>
-                            <li data-i18n="traction.card4.item1">TİM (Türkiye İhracatçılar Meclisi)</li>
-                            <li data-i18n="traction.card4.item2">İGEME (İhracatı Geliştirme Merkezi)</li>
-                            <li data-i18n="traction.card4.item3">Teknoloji partnerleri: Polygon, AWS</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Financials Section -->
-    <section id="financials" class="financials">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-coins"></i>
-                    <span data-i18n="financials.badge">Finansal Projeksiyonlar</span>
-                </div>
-                <h2 data-i18n="financials.title">3 Senaryo ile Büyüme Yol Haritası</h2>
-                <p class="section-subtitle" data-i18n="financials.subtitle">2026-2032 gelir ve değerleme tahminleri</p>
-            </div>
-            
-            <div class="scenario-tabs">
-                <button class="scenario-btn" data-scenario="conservative" data-i18n="financials.conservative">Muhafazakar</button>
-                <button class="scenario-btn active" data-scenario="base" data-i18n="financials.base">Temel</button>
-                <button class="scenario-btn" data-scenario="aggressive" data-i18n="financials.aggressive">İyimser</button>
-            </div>
-            
-            <div class="financial-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th data-i18n="financials.year">Yıl</th>
-                            <th data-i18n="financials.revenue">Ciro</th>
-                            <th data-i18n="financials.arr">ARR</th>
-                            <th data-i18n="financials.customers">Müşteri</th>
-                            <th data-i18n="financials.investment">Yatırım</th>
-                            <th data-i18n="financials.valuation">Değerleme</th>
-                            <th>ROI</th>
-                        </tr>
-                    </thead>
-                    <tbody id="financialBody"></tbody>
-                </table>
-            </div>
-            
-            <div class="chart-container">
-                <canvas id="financialChart"></canvas>
-            </div>
-            
-            <div class="investment-rounds">
-                <h3 data-i18n="financials.rounds">💵 Yatırım Turları</h3>
-                <div class="rounds-grid">
-                    <div class="round-card">
-                        <div class="round-year">2025</div>
-                        <div class="round-title">Seed</div>
-                        <div class="round-amount">$1.5-2M</div>
-                    </div>
-                    <div class="round-card">
-                        <div class="round-year">2027</div>
-                        <div class="round-title">Series A</div>
-                        <div class="round-amount">$8M</div>
-                    </div>
-                    <div class="round-card">
-                        <div class="round-year">2029</div>
-                        <div class="round-title">Series B</div>
-                        <div class="round-amount">$20M</div>
-                    </div>
-                    <div class="round-card">
-                        <div class="round-year">2031</div>
-                        <div class="round-title">Series C</div>
-                        <div class="round-amount">$50M</div>
-                    </div>
-                    <div class="round-card exit">
-                        <div class="round-year">2032-35</div>
-                        <div class="round-title">Exit/IPO</div>
-                        <div class="round-amount">$1B-10B</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Revenue Streams Section -->
-    <section class="revenue">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-money-bill-trend-up"></i>
-                    <span data-i18n="revenue.badge">Gelir Modelleri</span>
-                </div>
-                <h2 data-i18n="revenue.title">6 Gelir Modeli - 2028 Dağılımı</h2>
-                <p class="section-subtitle" data-i18n="revenue.subtitle">Çok katmanlı gelir modeli ile finansal sürdürülebilirlik</p>
-            </div>
-            
-            <div class="revenue-content">
-                <div class="revenue-chart-container">
-                    <canvas id="revenueChart"></canvas>
-                </div>
-                <div class="revenue-legend" id="revenueLegend"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use of Funds Section -->
-    <section class="funds">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-piggy-bank"></i>
-                    <span data-i18n="funds.badge">Yatırım Kullanımı</span>
-                </div>
-                <h2 data-i18n="funds.title">Seed Yatırımı Kullanım Planı ($1.5-2M)</h2>
-                <p class="section-subtitle" data-i18n="funds.subtitle">Stratejik kaynak dağılımı ile maksimum büyüme</p>
-            </div>
-            
-            <div class="funds-content">
-                <div class="funds-chart-container">
-                    <canvas id="fundsChart"></canvas>
-                </div>
-                <div class="funds-details">
-                    <div class="funds-breakdown">
-                        <h3 data-i18n="funds.breakdown">Dağılım Detayları</h3>
-                        <div class="breakdown-list" id="fundsBreakdown"></div>
-                    </div>
+                <div class="card">
+                    <i class="fas fa-money-bill-wave" style="font-size: 2rem; color: var(--primary-teal); margin-bottom: 1rem;"></i>
+                    <h3 data-tr="$40B İhracat Riski" data-en="$40B Export at Stake">$40B İhracat Riski</h3>
+                    <p data-tr="Türkiye'nin yıllık AB ihracatı" data-en="Turkey's annual EU exports">
+                        Türkiye'nin yıllık AB ihracatı
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section id="team" class="team">
+    <section id="team" class="section-dark">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-users"></i>
-                    <span data-i18n="team.badge">Ekibimiz</span>
-                </div>
-                <h2 data-i18n="team.title">Deneyimli Liderlik Ekibi</h2>
-                <p class="section-subtitle" data-i18n="team.subtitle">Karbon piyasasını şekillendiren uzman ekip</p>
-            </div>
+            <h2 data-tr="👥 Ekibimiz" data-en="👥 Our Team">👥 Ekibimiz</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.2rem;" 
+               data-tr="Deneyimli ekibimizle karbon piyasasını şekillendiriyoruz"
+               data-en="Shaping the carbon market with our experienced team">
+                Deneyimli ekibimizle karbon piyasasını şekillendiriyoruz
+            </p>
             
             <div class="team-grid">
-                <div class="team-card">
+                <div class="team-card card">
                     <div class="team-photo">
-                        <i class="fas fa-user-tie"></i>
+                        <i class="fas fa-user"></i>
                     </div>
                     <h3>Ercüment Erden</h3>
-                    <p class="team-title" data-i18n="team.role1">Kurucu & CEO</p>
-                    <p class="team-bio" data-i18n="team.bio1">Lionexia kurucusu, 15+ yıl fintech deneyimi</p>
-                    <a href="https://www.linkedin.com/in/erc%C3%BCment-erden/" target="_blank" class="linkedin-btn">
+                    <p data-tr="Kurucu & CEO" data-en="Founder & CEO">Kurucu & CEO</p>
+                    <p style="font-size: 0.9rem; color: var(--slate-medium); margin: 1rem 0;">
+                        <span data-tr="Lionexia kurucusu, 15+ yıl fintech deneyimi" 
+                              data-en="Lionexia founder, 15+ years fintech experience">
+                            Lionexia kurucusu, 15+ yıl fintech deneyimi
+                        </span>
+                    </p>
+                    <a href="https://www.linkedin.com/in/erc%C3%BCment-erden/" 
+                       class="cta-button" 
+                       style="background: var(--tech-blue); color: white; text-decoration: none; display: inline-block;">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
                 
-                <div class="team-card">
+                <div class="team-card card">
                     <div class="team-photo">
-                        <i class="fas fa-user-tie"></i>
+                        <i class="fas fa-user"></i>
                     </div>
                     <h3>Fatih Malyemez</h3>
-                    <p class="team-title" data-i18n="team.role2">CTO & Kurucu Ortak</p>
-                    <p class="team-bio" data-i18n="team.bio2">18+ yıl yazılım ve blockchain deneyimi</p>
-                    <a href="https://www.linkedin.com/in/fatih-malyemez-86b98a245/" target="_blank" class="linkedin-btn">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-                
-                <div class="team-card">
-                    <div class="team-photo">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Selim Güven</h3>
-                    <p class="team-title" data-i18n="team.role3">Danışman</p>
-                    <p class="team-bio" data-i18n="team.bio3">ACWA Power - Enerji sektörü uzmanı</p>
-                    <a href="https://www.linkedin.com/in/selim-g%C3%BCven-a6b70717/" target="_blank" class="linkedin-btn">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-                
-                <div class="team-card">
-                    <div class="team-photo">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Hüseyin Yeğin</h3>
-                    <p class="team-title" data-i18n="team.role4">Danışman</p>
-                    <p class="team-bio" data-i18n="team.bio4">Borusan EnBW - Yenilenebilir enerji</p>
-                    <a href="https://www.linkedin.com/in/h%C3%BCseyin-ye%C4%9Fin-2b4290219/" target="_blank" class="linkedin-btn">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-                
-                <div class="team-card">
-                    <div class="team-photo">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Ilgın Sözen</h3>
-                    <p class="team-title" data-i18n="team.role5">Danışman</p>
-                    <p class="team-bio" data-i18n="team.bio5">ÇEKÜL Vakfı - STK ve sürdürülebilirlik</p>
-                    <a href="https://www.linkedin.com/in/ilg%C4%B1n-s%C3%B6zen-8b2a5963/" target="_blank" class="linkedin-btn">
+                    <p data-tr="CTO & Kurucu Ortak" data-en="CTO & Co-Founder">CTO & Kurucu Ortak</p>
+                    <p style="font-size: 0.9rem; color: var(--slate-medium); margin: 1rem 0;">
+                        <span data-tr="18+ yıl yazılım ve blockchain deneyimi" 
+                              data-en="18+ years software and blockchain experience">
+                            18+ yıl yazılım ve blockchain deneyimi
+                        </span>
+                    </p>
+                    <a href="https://www.linkedin.com/in/fatih-malyemez-86b98a245/" 
+                       class="cta-button" 
+                       style="background: var(--tech-blue); color: white; text-decoration: none; display: inline-block;">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
                 </div>
@@ -848,134 +588,328 @@
         </div>
     </section>
 
-    <!-- ROI Calculator Section -->
-    <section id="calculator" class="roi-calculator">
+    <!-- ROI Calculator -->
+    <section id="calculator">
         <div class="container">
-            <div class="section-header">
-                <div class="section-badge">
-                    <i class="fas fa-calculator"></i>
-                    <span data-i18n="calculator.badge">Yatırım Hesaplayıcı</span>
-                </div>
-                <h2 data-i18n="calculator.title">Yatırım Getiri Hesaplayıcı</h2>
-                <p class="section-subtitle" data-i18n="calculator.subtitle">Potansiyel getirinizi gerçek zamanlı hesaplayın</p>
-            </div>
+            <h2 data-tr="🧮 Yatırım Getiri Hesaplayıcı" data-en="🧮 Investment Return Calculator">
+                🧮 Yatırım Getiri Hesaplayıcı
+            </h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-size: 1.2rem;"
+               data-tr="Potansiyel getirinizi hesaplayın" 
+               data-en="Calculate your potential returns">
+                Potansiyel getirinizi hesaplayın
+            </p>
             
-            <div class="calculator-premium">
-                <div class="calc-inputs-premium">
-                    <div class="input-group-premium">
-                        <label data-i18n="calculator.amount">Yatırım Miktarı</label>
-                        <div class="slider-container">
-                            <input type="range" class="slider-premium" id="investAmount" min="50000" max="5000000" step="50000" value="1500000">
-                            <div class="slider-value-display">
-                                <span id="amountDisplay">$1.5M</span>
-                            </div>
-                        </div>
+            <div class="calculator">
+                <div class="calculator-inputs">
+                    <div class="slider-container">
+                        <label data-tr="Yatırım Miktarı:" data-en="Investment Amount:">Yatırım Miktarı:</label>
+                        <div class="slider-value">$1.5M</div>
+                        <input type="range" min="500000" max="5000000" step="100000" value="1500000" class="investment-slider">
                     </div>
                     
-                    <div class="input-group-premium">
-                        <label data-i18n="calculator.years">Yatırım Süresi</label>
-                        <div class="slider-container">
-                            <input type="range" class="slider-premium" id="investYears" min="1" max="7" step="1" value="5">
-                            <div class="slider-value-display">
-                                <span id="yearsDisplay">5 <span data-i18n="calculator.yearsLabel">yıl</span></span>
-                            </div>
-                        </div>
+                    <div class="slider-container">
+                        <label data-tr="Yatırım Süresi:" data-en="Investment Duration:">Yatırım Süresi:</label>
+                        <div class="slider-value">5 <span data-tr="yıl" data-en="years">yıl</span></div>
+                        <input type="range" min="1" max="7" step="1" value="5" class="duration-slider">
                     </div>
                     
-                    <div class="input-group-premium">
-                        <label data-i18n="calculator.scenario">Senaryo</label>
-                        <div class="radio-group-premium">
-                            <label class="radio-label-premium">
-                                <input type="radio" name="calcScenario" value="conservative">
-                                <span data-i18n="financials.conservative">Muhafazakar</span>
-                            </label>
-                            <label class="radio-label-premium">
-                                <input type="radio" name="calcScenario" value="base" checked>
-                                <span data-i18n="financials.base">Temel</span>
-                            </label>
-                            <label class="radio-label-premium">
-                                <input type="radio" name="calcScenario" value="aggressive">
-                                <span data-i18n="financials.aggressive">İyimser</span>
-                            </label>
+                    <div>
+                        <label data-tr="Senaryo:" data-en="Scenario:">Senaryo:</label>
+                        <div class="scenario-tabs">
+                            <button class="tab-btn" data-scenario="conservative" data-tr="Muhafazakar" data-en="Conservative">Muhafazakar</button>
+                            <button class="tab-btn active" data-scenario="base" data-tr="Temel" data-en="Base">Temel</button>
+                            <button class="tab-btn" data-scenario="aggressive" data-tr="İyimser" data-en="Aggressive">İyimser</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="calc-output-premium">
-                    <div class="output-card-premium main-output">
-                        <div class="output-icon"><i class="fas fa-trophy"></i></div>
-                        <div class="output-value-premium" id="totalReturn">$37.5M</div>
-                        <div class="output-label-premium" data-i18n="calculator.total">Toplam Getiri</div>
-                        <div class="output-subtext-premium" id="returnTime">5 yıl sonra</div>
+                <div class="calculator-outputs">
+                    <div class="output-card">
+                        <div class="output-value">$37.5M</div>
+                        <div data-tr="Toplam Getiri" data-en="Total Return">Toplam Getiri</div>
                     </div>
-                    
-                    <div class="output-grid-premium">
-                        <div class="output-card-premium">
-                            <div class="output-value-premium" id="roiMultiple">25x</div>
-                            <div class="output-label-premium">ROI Katı</div>
-                        </div>
-                        <div class="output-card-premium">
-                            <div class="output-value-premium" id="exitVal">$135M</div>
-                            <div class="output-label-premium" data-i18n="calculator.exit">Çıkış Değerlemesi</div>
-                        </div>
-                        <div class="output-card-premium">
-                            <div class="output-value-premium" id="cagr">112%</div>
-                            <div class="output-label-premium">Yıllık Getiri (CAGR)</div>
-                        </div>
+                    <div class="output-card">
+                        <div class="output-value">25x</div>
+                        <div data-tr="ROI Katı" data-en="ROI Multiple">ROI Katı</div>
+                    </div>
+                    <div class="output-card">
+                        <div class="output-value">$135M</div>
+                        <div data-tr="Çıkış Değerlemesi" data-en="Exit Valuation">Çıkış Değerlemesi</div>
+                    </div>
+                    <div class="output-card">
+                        <div class="output-value">112%</div>
+                        <div data-tr="Yıllık Getiri" data-en="Annual Return">Yıllık Getiri</div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="premium-chart">
-                <canvas id="roiChart"></canvas>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3 data-i18n="footer.contact">İletişim</h3>
-                    <p><i class="fas fa-envelope"></i> ercument.erden@lionexia.com</p>
-                    <p><i class="fas fa-phone"></i> +90 532 440 83 89</p>
-                    <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.location">İstanbul + Londra</span></p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3 data-i18n="footer.legal">Yasal</h3>
-                    <a href="#" data-i18n="footer.privacy">Gizlilik Politikası</a>
-                    <a href="#" data-i18n="footer.terms">Kullanım Şartları</a>
-                    <a href="#" data-i18n="footer.dataroom">Data Room</a>
-                    <a href="#" data-i18n="footer.investor">Yatırımcı İlişkileri</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h3 data-i18n="footer.social">Sosyal Medya</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-tr="İletişim" data-en="Contact">İletişim</h3>
+                <p>ercument.erden@lionexia.com</p>
+                <p>+90 (XXX) XXX XXXX</p>
+                <p data-tr="İstanbul, Türkiye | London, UK" data-en="Istanbul, Turkey | London, UK">
+                    İstanbul, Türkiye | London, UK
+                </p>
             </div>
             
-            <div class="footer-bottom">
-                <p data-i18n="footer.copy">© 2025 CarbonEcoMarket. Gizli ve özel doküman. Tüm hakları saklıdır.</p>
+            <div class="footer-section">
+                <h3 data-tr="Yasal" data-en="Legal">Yasal</h3>
+                <p><a href="#" style="color: white;">Gizlilik Politikası</a></p>
+                <p><a href="#" style="color: white;">Kullanım Şartları</a></p>
+                <p><a href="#" style="color: white;">Data Room</a></p>
             </div>
+            
+            <div class="footer-section">
+                <h3 data-tr="Sosyal Medya" data-en="Social Media">Sosyal Medya</h3>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color: white; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="color: white; font-size: 1.5rem;"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p data-tr="© 2025 CarbonEcoMarket. Gizli ve özel doküman. Tüm hakları saklıdır." 
+               data-en="© 2025 CarbonEcoMarket. Confidential and proprietary document. All rights reserved.">
+                © 2025 CarbonEcoMarket. Gizli ve özel doküman. Tüm hakları saklıdır.
+            </p>
         </div>
     </footer>
 
-    <!-- JavaScript Files -->
-    <script src="js/translations.js"></script>
-    <script src="js/charts.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <script>
+        // Localization System
+        const translations = {
+            tr: {
+                // Header
+                "Data Room Erişim": "Data Room Erişim",
+                // Hero
+                "Dünyanın İlk Hibrit Karbon Borsası": "Dünyanın İlk Hibrit Karbon Borsası",
+                "CBAM 2026 uyumu, blockchain doğrulama, çok taraflı pazar": "CBAM 2026 uyumu, blockchain doğrulama, çok taraflı pazar",
+                "Seed Round": "Seed Round",
+                "50K ton/year": "50K ton/year",
+                "Post-Money": "Post-Money",
+                "Target ROI (Aggressive)": "Target ROI (Aggressive)",
+                "Sunumu İndir": "Sunumu İndir",
+                "Data Room": "Data Room",
+                // Unicorn
+                "🦄 Unicorn Potansiyeli: $1B+ Değerleme Yolu": "🦄 Unicorn Potansiyeli: $1B+ Değerleme Yolu",
+                "Global Karbon Piyasası": "Global Karbon Piyasası",
+                "$70B+ (2030'da $300B+)": "$70B+ (2030'da $300B+)",
+                "Türkiye'nin CBAM Zorunluluğu": "Türkiye'nin CBAM Zorunluluğu",
+                "15,000+ şirket": "15,000+ şirket",
+                "Blockchain + IoT + AI Kombinasyonu": "Blockchain + IoT + AI Kombinasyonu",
+                "İlk ve tek": "İlk ve tek",
+                // Problem
+                "❌ CBAM 2026 Krizi - Acil Çözüm Gereken Problem": "❌ CBAM 2026 Krizi - Acil Çözüm Gereken Problem",
+                "15,000+ Türk İhracatçı Risk Altında": "15,000+ Türk İhracatçı Risk Altında",
+                "AB'ye ihracat yapan tüm firmalar": "AB'ye ihracat yapan tüm firmalar",
+                "$40B İhracat Riski": "$40B İhracat Riski",
+                "Türkiye'nin yıllık AB ihracatı": "Türkiye'nin yıllık AB ihracatı",
+                // Team
+                "👥 Ekibimiz": "👥 Ekibimiz",
+                "Deneyimli ekibimizle karbon piyasasını şekillendiriyoruz": "Deneyimli ekibimizle karbon piyasasını şekillendiriyoruz",
+                "Kurucu & CEO": "Kurucu & CEO",
+                "Lionexia kurucusu, 15+ yıl fintech deneyimi": "Lionexia kurucusu, 15+ yıl fintech deneyimi",
+                "CTO & Kurucu Ortak": "CTO & Kurucu Ortak",
+                "18+ yıl yazılım ve blockchain deneyimi": "18+ yıl yazılım ve blockchain deneyimi",
+                // Calculator
+                "🧮 Yatırım Getiri Hesaplayıcı": "🧮 Yatırım Getiri Hesaplayıcı",
+                "Potansiyel getirinizi hesaplayın": "Potansiyel getirinizi hesaplayın",
+                "Yatırım Miktarı:": "Yatırım Miktarı:",
+                "Yatırım Süresi:": "Yatırım Süresi:",
+                "yıl": "yıl",
+                "Senaryo:": "Senaryo:",
+                "Muhafazakar": "Muhafazakar",
+                "Temel": "Temel",
+                "İyimser": "İyimser",
+                "Toplam Getiri": "Toplam Getiri",
+                "ROI Katı": "ROI Katı",
+                "Çıkış Değerlemesi": "Çıkış Değerlemesi",
+                "Yıllık Getiri": "Yıllık Getiri",
+                // Footer
+                "İletişim": "İletişim",
+                "İstanbul, Türkiye | London, UK": "İstanbul, Türkiye | London, UK",
+                "Yasal": "Yasal",
+                "Sosyal Medya": "Sosyal Medya",
+                "© 2025 CarbonEcoMarket. Gizli ve özel doküman. Tüm hakları saklıdır.": "© 2025 CarbonEcoMarket. Gizli ve özel doküman. Tüm hakları saklıdır."
+            },
+            en: {
+                // Header
+                "Data Room Erişim": "Data Room Access",
+                // Hero
+                "Dünyanın İlk Hibrit Karbon Borsası": "World's First Hybrid Carbon Exchange",
+                "CBAM 2026 uyumu, blockchain doğrulama, çok taraflı pazar": "CBAM 2026 compliance, blockchain verification, multi-sided marketplace",
+                "Seed Round": "Seed Round",
+                "50K ton/year": "50K ton/year",
+                "Post-Money": "Post-Money",
+                "Target ROI (Aggressive)": "Target ROI (Aggressive)",
+                "Sunumu İndir": "Download Deck",
+                "Data Room": "Data Room",
+                // Unicorn
+                "🦄 Unicorn Potansiyeli: $1B+ Değerleme Yolu": "🦄 Unicorn Potential: Path to $1B+ Valuation",
+                "Global Karbon Piyasası": "Global Carbon Market",
+                "$70B+ (2030'da $300B+)": "$70B+ (projected $300B+ by 2030)",
+                "Türkiye'nin CBAM Zorunluluğu": "Turkey's CBAM Mandate",
+                "15,000+ şirket": "15,000+ companies",
+                "Blockchain + IoT + AI Kombinasyonu": "Blockchain + IoT + AI Combo",
+                "İlk ve tek": "First and only",
+                // Problem
+                "❌ CBAM 2026 Krizi - Acil Çözüm Gereken Problem": "❌ CBAM 2026 Crisis - Urgent Problem Needs Solution",
+                "15,000+ Türk İhracatçı Risk Altında": "15,000+ Turkish Exporters at Risk",
+                "AB'ye ihracat yapan tüm firmalar": "All companies exporting to EU",
+                "$40B İhracat Riski": "$40B Export at Stake",
+                "Türkiye'nin yıllık AB ihracatı": "Turkey's annual EU exports",
+                // Team
+                "👥 Ekibimiz": "👥 Our Team",
+                "Deneyimli ekibimizle karbon piyasasını şekillendiriyoruz": "Shaping the carbon market with our experienced team",
+                "Kurucu & CEO": "Founder & CEO",
+                "Lionexia kurucusu, 15+ yıl fintech deneyimi": "Lionexia founder, 15+ years fintech experience",
+                "CTO & Kurucu Ortak": "CTO & Co-Founder",
+                "18+ yıl yazılım ve blockchain deneyimi": "18+ years software and blockchain experience",
+                // Calculator
+                "🧮 Yatırım Getiri Hesaplayıcı": "🧮 Investment Return Calculator",
+                "Potansiyel getirinizi hesaplayın": "Calculate your potential returns",
+                "Yatırım Miktarı:": "Investment Amount:",
+                "Yatırım Süresi:": "Investment Duration:",
+                "yıl": "years",
+                "Senaryo:": "Scenario:",
+                "Muhafazakar": "Conservative",
+                "Temel": "Base",
+                "İyimser": "Aggressive",
+                "Toplam Getiri": "Total Return",
+                "ROI Katı": "ROI Multiple",
+                "Çıkış Değerlemesi": "Exit Valuation",
+                "Yıllık Getiri": "Annual Return",
+                // Footer
+                "İletişim": "Contact",
+                "İstanbul, Türkiye | London, UK": "Istanbul, Turkey | London, UK",
+                "Yasal": "Legal",
+                "Sosyal Medya": "Social Media",
+                "© 2025 CarbonEcoMarket. Gizli ve özel doküman. Tüm hakları saklıdır.": "© 2025 CarbonEcoMarket. Confidential and proprietary document. All rights reserved."
+            }
+        };
+
+        let currentLang = 'tr';
+
+        // Language Toggle
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                if (lang !== currentLang) {
+                    currentLang = lang;
+                    updateLanguage();
+                    
+                    // Update active state
+                    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        function updateLanguage() {
+            // Update elements with data attributes
+            document.querySelectorAll('[data-tr]').forEach(element => {
+                const key = element.getAttribute('data-tr');
+                if (translations[currentLang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'BUTTON') {
+                        element.value = translations[currentLang][key];
+                    } else {
+                        element.textContent = translations[currentLang][key];
+                    }
+                }
+            });
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ROI Calculator Logic
+        const valuations = {
+            conservative: [16, 27, 47, 95, 135, 300, 405],
+            base: [20, 34, 68, 135, 203, 500, 675],
+            aggressive: [24, 47, 108, 243, 405, 1000, 1350]
+        };
+
+        function calculateROI(investment, years, scenario) {
+            const seedValuation = 9.1; // Post-money
+            const exitValuation = valuations[scenario][years - 1];
+            const roi = (exitValuation / seedValuation) * investment;
+            const multiple = exitValuation / seedValuation;
+            const cagr = Math.pow(multiple, 1/years) - 1;
+            
+            return {
+                totalReturn: Math.round(roi * 100) / 100,
+                multiple: Math.round(multiple * 10) / 10,
+                exitValuation: exitValuation,
+                cagr: Math.round(cagr * 10000) / 100
+            };
+        }
+
+        function updateCalculator() {
+            const investment = parseInt(document.querySelector('.investment-slider').value);
+            const years = parseInt(document.querySelector('.duration-slider').value);
+            const scenario = document.querySelector('.tab-btn.active').getAttribute('data-scenario');
+            
+            const result = calculateROI(investment / 1000000, years, scenario);
+            
+            // Update output values
+            document.querySelectorAll('.output-value')[0].textContent = `$${result.totalReturn}M`;
+            document.querySelectorAll('.output-value')[1].textContent = `${result.multiple}x`;
+            document.querySelectorAll('.output-value')[2].textContent = `$${result.exitValuation}M`;
+            document.querySelectorAll('.output-value')[3].textContent = `${result.cagr}%`;
+            
+            // Update slider values
+            document.querySelector('.investment-slider').nextElementSibling.textContent = `$${(investment / 1000000).toFixed(1)}M`;
+            document.querySelector('.duration-slider').nextElementSibling.innerHTML = 
+                `${years} <span data-tr="yıl" data-en="years">${currentLang === 'tr' ? 'yıl' : 'years'}</span>`;
+        }
+
+        // Calculator Event Listeners
+        document.querySelectorAll('.investment-slider, .duration-slider').forEach(slider => {
+            slider.addEventListener('input', updateCalculator);
+        });
+
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                updateCalculator();
+            });
+        });
+
+        // Initialize calculator
+        updateCalculator();
+
+        // Mobile Menu Toggle (for smaller screens)
+        function initMobileMenu() {
+            if (window.innerWidth <= 768) {
+                // Add mobile menu functionality here if needed
+            }
+        }
+
+        // Initialize
+        window.addEventListener('load', initMobileMenu);
+        window.addEventListener('resize', initMobileMenu);
+    </script>
 </body>
 </html>
