@@ -1,3 +1,4 @@
+/* Responsive Design */
 @media (max-width: 1024px) {
     .hero-grid {
         grid-template-columns: 1fr;
@@ -11,41 +12,84 @@
     .calculator-premium {
         grid-template-columns: 1fr;
     }
+    
+    .output-grid-premium {
+        grid-template-columns: 1fr;
+    }
+    
+    .market-circles {
+        transform: scale(0.8);
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-    
     .nav-menu {
         display: none;
-    }
-    
-    .mobile-menu-btn {
-        display: flex;
-    }
-    
-    .hero {
-        padding: 120px 0 80px;
-        margin-top: 70px;
     }
     
     .hero-content h1 {
         font-size: 2.5rem;
     }
     
-    section {
-        padding: 80px 0;
+    .section-title {
+        font-size: 2.2rem;
     }
     
-    .unicorn-grid,
-    .problem-grid {
+    .hero-metrics {
         grid-template-columns: 1fr;
     }
     
-    .solution-grid {
-        grid-template-columns: 1fr;
+    .market-visual {
+        height: 400px;
+    }
+    
+    .tam {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .sam {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .som {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .value-proposition {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .scenario-tabs {
+        flex-direction: column;
+    }
+    
+    .rounds-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .decacorn-timeline {
+        padding: 30px 20px;
+    }
+    
+    .timeline::before {
+        left: 25px;
+    }
+    
+    .timeline-dot {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .calc-inputs-premium {
+        padding: 30px 20px;
     }
 }
 
@@ -54,11 +98,86 @@
         font-size: 2rem;
     }
     
-    .hero-cta {
-        flex-direction: column;
+    .section-title {
+        font-size: 1.8rem;
     }
     
-    .hero-metrics {
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    section {
+        padding: 70px 0;
+    }
+    
+    .metric-card, .problem-card, .solution-card, .traction-card, .team-card {
+        padding: 30px 20px;
+    }
+    
+    .quote-box, .value-proposition, .investment-rounds {
+        padding: 30px 20px;
+    }
+    
+    .rounds-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .lang-toggle {
+        order: 2;
+    }
+    
+    .btn-dataroom {
+        order: 1;
+    }
+}
+
+/* High-resolution displays */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+    
+    .section-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    header, footer, .hero-cta, .scenario-tabs {
+        display: none;
+    }
+    
+    .hero {
+        margin-top: 0;
+        padding: 50px 0;
+    }
+    
+    section {
+        padding: 50px 0;
+        break-inside: avoid;
+    }
+    
+    .chart-container {
+        break-inside: avoid;
     }
 }
