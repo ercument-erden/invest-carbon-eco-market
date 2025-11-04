@@ -3,11 +3,8 @@
   "name": "carbonecomarket-invest",
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "."
-      }
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -15,11 +12,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "buildCommand": "echo 'Static site - no build needed' && ls -la",
-  "outputDirectory": ".",
-  "installCommand": "echo 'No dependencies to install'"
+  ]
 }
