@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "name": "carbonecomarket-invest",
+  "name": "carbon-eco-market",
   "builds": [
     {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "."
+        "distDir": "dist"
       }
     }
   ],
@@ -16,7 +16,15 @@
       "dest": "/index.html"
     }
   ],
-  "buildCommand": "echo 'No build needed for static site'",
-  "outputDirectory": ".",
-  "installCommand": "echo 'No installation needed'"
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "github": {
+    "silent": true
+  }
 }
