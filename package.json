@@ -1,34 +1,13 @@
 {
   "name": "carbonecomarket-invest",
   "version": "1.0.0",
-  "description": "CarbonEcoMarket Investor Landing Page - World's First Hybrid Carbon Exchange",
-  "main": "index.html",
+  "description": "CarbonEcoMarket Investor Landing Page",
+  "type": "module",
   "scripts": {
-    "dev": "python3 -m http.server 3000",
-    "start": "python3 -m http.server 3000",
-    "build": "echo 'No build process needed for static site'",
-    "deploy": "vercel --prod"
+    "build": "echo 'Static site - no build needed'",
+    "dev": "echo 'Static site - no dev server needed'"
   },
-  "keywords": [
-    "carbon-credits",
-    "blockchain",
-    "investment",
-    "startup",
-    "vc",
-    "cbam",
-    "sustainability"
-  ],
-  "author": "CarbonEcoMarket Team",
-  "license": "UNLICENSED",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/your-username/carbonecomarket-invest.git"
-  },
-  "homepage": "https://invest.carbonecomarket.com",
-  "engines": {
-    "node": ">=14.0.0"
-  },
-  "devDependencies": {
-    "vercel": "^28.0.0"
-  }
+  "keywords": ["carbon", "investment", "blockchain"],
+  "author": "CarbonEcoMarket",
+  "license": "MIT"
 }
