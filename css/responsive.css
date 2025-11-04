@@ -1,0 +1,331 @@
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+    
+    .calculator-premium {
+        grid-template-columns: 1fr;
+    }
+    
+    .output-grid-premium {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .revenue-content,
+    .funds-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .market-stack {
+        max-width: 100%;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: var(--shadow-xl);
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .nav-menu a:last-child {
+        border-bottom: none;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .mobile-menu-btn.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .hero {
+        padding: 120px 0 80px;
+        margin-top: 70px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    section {
+        padding: 80px 0;
+    }
+    
+    .unicorn-grid,
+    .problem-grid,
+    .traction-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .solution-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .value-proposition {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .scenario-tabs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .scenario-btn {
+        text-align: center;
+    }
+    
+    .rounds-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .output-grid-premium {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .metric-card,
+    .problem-card,
+    .solution-card,
+    .traction-card,
+    .team-card {
+        padding: 30px 20px;
+    }
+    
+    .quote-box,
+    .value-proposition,
+    .investment-rounds {
+        padding: 30px 20px;
+    }
+    
+    .decacorn-timeline {
+        padding: 30px 20px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .timeline-marker {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .timeline::before {
+        display: none;
+    }
+    
+    .rounds-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .calc-inputs-premium {
+        padding: 30px 20px;
+    }
+    
+    .premium-chart {
+        padding: 20px;
+    }
+    
+    .language-btn .language-text {
+        display: none;
+    }
+    
+    .btn-dataroom span {
+        display: none;
+    }
+    
+    .btn-dataroom {
+        padding: 12px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 360px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-icon,
+    .metric-icon,
+    .unicorn-icon,
+    .problem-icon,
+    .solution-icon,
+    .traction-icon {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .loading-screen,
+    .mobile-menu-btn,
+    .language-switcher,
+    .btn-dataroom {
+        display: none !important;
+    }
+    
+    header {
+        position: static;
+        background: white !important;
+    }
+    
+    .hero {
+        background: white !important;
+        color: black !important;
+        margin-top: 0;
+    }
+    
+    .gradient-text {
+        background: none !important;
+        -webkit-text-fill-color: black !important;
+        color: black !important;
+    }
+    
+    .hero-badge,
+    .metric-card {
+        background: #f8f9fa !important;
+        border: 1px solid #dee2e6 !important;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .floating-shapes,
+    .shape {
+        display: none;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --slate-dark: #f7fafc;
+        --slate-medium: #e2e8f0;
+        --slate-light: #cbd5e0;
+        --cloud-light: #2d3748;
+        --white: #1a202c;
+    }
+}
+
+/* Accessibility */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-teal: #00695c;
+        --accent-lime: #8bc34a;
+        --tech-blue: #1565c0;
+    }
+}
