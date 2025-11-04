@@ -1,13 +1,30 @@
 {
-  "name": "carbonecomarket-invest",
+  "name": "carbon-eco-market",
   "version": "1.0.0",
-  "description": "CarbonEcoMarket Investor Platform",
-  "type": "module",
+  "description": "World's First Hybrid Carbon Exchange - Investment Platform",
+  "main": "index.html",
   "scripts": {
-    "build": "echo 'Build complete'",
-    "dev": "echo 'Development mode'"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && vercel --prod"
   },
-  "keywords": ["carbon", "investment", "blockchain"],
-  "author": "CarbonEcoMarket",
-  "license": "UNLICENSED"
+  "keywords": [
+    "carbon",
+    "exchange",
+    "blockchain",
+    "cbam",
+    "investment",
+    "startup",
+    "climate-tech"
+  ],
+  "author": "CarbonEcoMarket Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
 }
