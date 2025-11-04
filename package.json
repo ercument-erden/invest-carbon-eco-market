@@ -1,13 +1,13 @@
 {
   "name": "carbonecomarket-invest",
   "version": "1.0.0",
-  "description": "CarbonEcoMarket Investor Landing Page",
+  "description": "CarbonEcoMarket Investor Platform",
   "type": "module",
   "scripts": {
-    "build": "echo 'Static site - no build needed'",
-    "dev": "echo 'Static site - no dev server needed'"
+    "build": "echo 'Build complete'",
+    "dev": "echo 'Development mode'"
   },
   "keywords": ["carbon", "investment", "blockchain"],
   "author": "CarbonEcoMarket",
-  "license": "MIT"
+  "license": "UNLICENSED"
 }
