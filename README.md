@@ -1,24 +1,27 @@
-# CarbonEcoMarket Investor Platform
+# 🌱 CarbonEcoMarket - Investment Platform
 
-Premium investor landing page for CarbonEcoMarket - World's First Hybrid Carbon Exchange.
+**World's First Hybrid Carbon Exchange** - CBAM 2026 compliance, blockchain verification, multi-sided marketplace.
 
-## 🚀 Features
+## 🚀 Live Demo
 
-- **🌐 Bilingual Support** - Perfect TR/EN language switching
-- **💎 Premium Design** - Professional VC-grade interface
-- **📊 Interactive Charts** - Financial projections with Chart.js
-- **🧮 ROI Calculator** - Real-time investment return calculations
-- **📱 Fully Responsive** - Mobile-first design
-- **⚡ Fast Loading** - Optimized performance
-- **🎨 Professional Visuals** - High-quality design elements
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://carbonecomarket.vercel.app)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-## 🛠 Technology Stack
+## 📊 Investment Highlights
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with CSS variables
-- **JavaScript** - Interactive functionality
-- **Chart.js** - Data visualizations
-- **Font Awesome** - Premium icons
-- **Google Fonts** - Inter font family
+- **$1.5-2M Seed Round** seeking investment
+- **$70B+** Global carbon market opportunity  
+- **149x ROI** potential for early investors
+- **12 LOI** signed - 50K ton/year pipeline
+- **MVP Launch** Q1 2026
+
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Charts**: Chart.js for financial visualizations
+- **Icons**: Font Awesome 6.4.0
+- **Fonts**: Google Fonts (Inter)
+- **Deployment**: Vercel
+- **Responsive**: Mobile-first design
 
 ## 📁 Project Structure
